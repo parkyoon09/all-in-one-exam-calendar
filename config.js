@@ -8,8 +8,8 @@
      2) 결제 수단이 연결되지 않은 무료 키만 쓰기
      3) 대회가 끝나면 키 삭제(폐기)하기
    ===================================================================== */
-// 공개 저장소에는 Gemini 키를 넣지 않았습니다. 설정 탭에서 각자 입력하면 AI 추천이 켜지고, 비어 있으면 규칙 기반 추천으로 동작합니다.
+// 대회용 공용 Gemini 키가 들어 있습니다. 누구나 볼 수 있으니 대회가 끝나면 이 키를 삭제(폐기)하세요.
 window.JGCAL_KEYS = {
-  geminiKey: "",   // Google AI Studio에서 받은 키 (AIza...)
+  geminiKey: "AQ.Ab8RN6JFLNtcOd2kNnbYfVm-DB9qnR9Dj93uCTVhNWQeqTJ69w",   // Google AI Studio에서 받은 키 (AIza...)
   neisKey: "6e1afdada50a47149f4ee77a4995c012"      // open.neis.go.kr 인증키
 };

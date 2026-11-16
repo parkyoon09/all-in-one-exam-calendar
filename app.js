@@ -524,9 +524,10 @@ function viewSettings() {
   const note = k => ui.msg[k] ? `<div class="${ui.msg[k].err ? "msg-err" : "msg-ok"} full">${esc(ui.msg[k].text)}</div>` : "";
   return `<div class="set-grid">
   <div class="card"><h3>AI 추천 (Gemini 무료 API)</h3>
-    <p class="sub">Google AI Studio(aistudio.google.com)에서 무료 API 키를 받아 넣으세요. 키는 이 기기 브라우저에만 저장돼요.</p>
+    <p class="sub">이 사이트에는 대회용 공용 Gemini 키가 들어 있어서 따로 설정하지 않아도 AI가 오늘 할 일을 추천해요. 사용량 제한에 걸리거나 오류가 나면 마감 임박도·반영 비율·남은 할 일로 계산하는 규칙 기반 추천으로 자동 전환돼요.</p>
+    <p class="sub mt8">내 키를 쓰고 싶다면 aistudio.google.com에서 API 키를 만들어 복사한 뒤, 아래 칸에 붙여 넣고 저장을 누르고 연결 테스트로 확인하세요. 직접 넣은 키는 이 기기의 브라우저에만 저장되고, 공용 키보다 우선해서 써요.</p>
     <form data-form="gset" class="form mt12">
-      <label class="field full">API 키<input name="key" type="password" autocomplete="off" value="${esc(g.key)}" placeholder="${PRESET.geminiKey ? "(기본 키 있음 — 비워 두면 그대로 써요)" : "AIza..."}"></label>
+      <label class="field full">API 키<input name="key" type="password" autocomplete="off" value="${esc(g.key)}" placeholder="${PRESET.geminiKey ? "(기본 키 있음 — 비워 두면 그대로 써요)" : "여기에 키를 붙여 넣기"}"></label>
       <label class="field full">모델<input name="model" value="${esc(g.model)}"></label>
       <button class="btn">저장</button><button type="button" class="btn ghost" data-act="gtest">연결 테스트</button>${note("g")}</form></div>
 
