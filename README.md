@@ -1,5 +1,8 @@
 # 올인원 시험캘린더
 
+작품 주소: https://parkyoon09.github.io/all-in-one-exam-calendar/
+소스코드: https://github.com/parkyoon09/all-in-one-exam-calendar
+
 수행평가·시험 일정을 한곳에 모으고, "오늘 뭐부터 할지"를 우선순위대로 추천해 주는 웹 앱입니다.
 설치·서버 없이 파일(`index.html`, `style.css`, `app.js`, `config.js`)로 동작하고, 데이터는 사용하는 기기의 브라우저(`localStorage`)에만 저장됩니다.
 
