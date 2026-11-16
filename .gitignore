@@ -1,0 +1,10 @@
+# 허용 목록 방식: 아래에 적은 파일만 저장소에 올린다. (신청서·결과보고서·계획서 등은 올라가지 않음)
+*
+!.gitignore
+!index.html
+!style.css
+!app.js
+!config.js
+!README.md
+!icons/
+!icons/favicon-32.png
